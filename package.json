@@ -1,0 +1,32 @@
+{
+  "name": "brave-redirection-recorder",
+  "version": "1.0.0",
+  "description": "Lambda function for measuring web redirections",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "make build",
+    "test": "node_modules/mocha/bin/mocha tests/*",
+    "lint": "node node_modules/eslint/bin/eslint.js .",
+    "lint:fix": "node node_modules/eslint/bin/eslint.js . --fix",
+    "lint:js": "./node_modules/standard/bin/cmd.js",
+    "lint:js:fix": "./node_modules/standard/bin/cmd.js --fix"
+  },
+  "author": "Peter Snyder <pes@brave.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1197.0",
+    "axios": "^0.23.0",
+    "get-xpath": "^3.0.1",
+    "parse-domain": "^2.1.2",
+    "puppeteer": "^10.4.0",
+    "puppeteer-extra": "^3.2.3",
+    "puppeteer-extra-plugin-stealth": "^2.7.8",
+    "shuffle-array": "^1.0.1",
+    "standard": "^16.0.4",
+    "uuid": "^3.3.0"
+  }
+}
